@@ -1,24 +1,19 @@
 package roles;
 
+import resources.Utils;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Provides the state of the guesser role.
  */
 public class Guesser {
 
-    protected final static ArrayList<Character> ALPHABET = new ArrayList<>(Arrays.asList(
-            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-            'U', 'V', 'W', 'X', 'Y', 'Z'
-    ));
-
     protected ArrayList<Character> remainingLetters;
     protected int numGuessed;
 
     public Guesser() {
-        this.remainingLetters = new ArrayList<>(ALPHABET);
+        this.remainingLetters = new ArrayList<>(Utils.ALPHABET);
         this.numGuessed = 0;
     }
 

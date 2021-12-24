@@ -1,11 +1,12 @@
 package ai;
 
+import resources.Utils;
 import roles.Guesser;
 
 import java.util.*;
 
 /**
- * AI that will randomly guess
+ * AI that will randomly guess letters
  */
 public class RandomAI extends Guesser {
 
