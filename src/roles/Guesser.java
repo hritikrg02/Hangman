@@ -23,7 +23,7 @@ public class Guesser {
     }
 
     public char guessLetter(char letter) throws Exception {
-        this.remainingLetters.remove(letter);
+        this.remainingLetters.remove(Character.valueOf(letter));
         this.numGuessed++;
         return letter;
     }

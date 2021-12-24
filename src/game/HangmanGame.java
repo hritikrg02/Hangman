@@ -1,5 +1,7 @@
 package game;
 
+import ai.*;
+
 /**
  * Provides the hangman game implementation.
  */
@@ -11,5 +13,10 @@ public class HangmanGame {
 
     //TODO create function for executioner to select a word
 
-    //TODO main method
+    public static void main(String[] args) throws Exception {
+        RandomAI randomAI = new RandomAI();
+        char c = randomAI.guessLetter();
+        System.out.println(c);
+        System.out.println(randomAI.getRemainingLetters());
+    }
 }

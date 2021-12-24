@@ -13,7 +13,7 @@ public class RandomAI extends Guesser {
         super();
     }
 
-    public char guessLetter(char letter) throws Exception {
+    public char guessLetter() throws Exception {
         Random r = new Random(Calendar.getInstance().getTimeInMillis());
         OptionalInt o = r.ints(0, this.remainingLetters.size()).findFirst();
 
