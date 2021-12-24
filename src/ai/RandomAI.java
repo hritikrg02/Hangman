@@ -14,7 +14,7 @@ public class RandomAI extends Guesser {
     }
 
     public char guessLetter() throws Exception {
-        Random r = new Random(Calendar.getInstance().getTimeInMillis());
+        Random r = new Random();
         OptionalInt o = r.ints(0, this.remainingLetters.size()).findFirst();
 
         if (o.isEmpty()) {
