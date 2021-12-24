@@ -1,12 +1,12 @@
-package game;
+package roles;
 
 /**
  * Provides the state of the executioner role.
  */
-public class executioner {
+public class Executioner {
     private final String guessWord;
 
-    public executioner(String word) {
+    public Executioner(String word) {
         guessWord = word;
     }
 
